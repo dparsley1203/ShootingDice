@@ -14,13 +14,19 @@ namespace ShootingDice
             Taunt = taunt;
         }
 
+        public override int Roll()
+        {
+            // Return a random number between 1 and DiceSize
+            Console.WriteLine($"{Name} says, {Taunt}"); //Testing the insult input
+            return new Random().Next(DiceSize) + 1;
+        }
 
         public override void Play(Player other)
 
        {    int myRoll = Roll();
             int otherRoll = other.Roll();
 
-            Console.WriteLine($"{Name} rolls a {myRoll} {Taunt}");
+            Console.WriteLine($"{Name} rolls a {myRoll}");  //Only works if SmackTalker rolls first
             Console.WriteLine($"{other.Name} rolls a {otherRoll}");
             if (myRoll > otherRoll)
             {

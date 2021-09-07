@@ -47,7 +47,7 @@ namespace ShootingDice
             Console.WriteLine("-------------------");
 
             List<Player> players = new List<Player>() {
-                player1, player2, player3, large, smackTalking
+                player1, player2, player3, large, smackTalking, oneHigher
             };
 
             PlayMany(players);
