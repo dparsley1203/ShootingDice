@@ -8,17 +8,10 @@ namespace ShootingDice
     public class OneHigherPlayer : Player
     {
 
-         public override int Roll()
-        {
-            // Return a random number between 1 and DiceSize
-            return new Random().Next(DiceSize) + 1;
-        }
 
         public override void Play(Player other)
         {
             // Call roll for "this" object and for the "other" object
-            // int myRoll = Roll();
-            // int otherRoll = myRoll - 1; //Not yet working
 
             int otherRoll = other.Roll();
             int myRoll = otherRoll + 1;

@@ -21,26 +21,26 @@ namespace ShootingDice
             return new Random().Next(DiceSize) + 1;
         }
 
-        public override void Play(Player other)
+    //     public override void Play(Player other)
 
-       {    int myRoll = Roll();
-            int otherRoll = other.Roll();
+    //    {    int myRoll = Roll();
+    //         int otherRoll = other.Roll();
 
-            Console.WriteLine($"{Name} rolls a {myRoll}");  //Only works if SmackTalker rolls first
-            Console.WriteLine($"{other.Name} rolls a {otherRoll}");
-            if (myRoll > otherRoll)
-            {
-                Console.WriteLine($"{Name} Wins!");
-            }
-            else if (myRoll < otherRoll)
-            {
-                Console.WriteLine($"{other.Name} Wins!");
-            }
-            else
-            {
-                // if the rolls are equal it's a tie
-                Console.WriteLine("It's a tie");
-            }
-        }
+    //         Console.WriteLine($"{Name} rolls a {myRoll}");  //Only works if SmackTalker rolls first
+    //         Console.WriteLine($"{other.Name} rolls a {otherRoll}");
+    //         if (myRoll > otherRoll)
+    //         {
+    //             Console.WriteLine($"{Name} Wins!");
+    //         }
+    //         else if (myRoll < otherRoll)
+    //         {
+    //             Console.WriteLine($"{other.Name} Wins!");
+    //         }
+    //         else
+    //         {
+    //             // if the rolls are equal it's a tie
+    //             Console.WriteLine("It's a tie");
+    //         }
+    //     }
     }
 }
